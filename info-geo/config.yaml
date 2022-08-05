@@ -1,6 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
-theme: github.com/CaiJimmy/hugo-theme-stack
+theme: hugo-theme-stack
 paginate: 5
 title: Example Site
 
