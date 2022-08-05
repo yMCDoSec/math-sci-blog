@@ -7,7 +7,7 @@ title: Example Site
 languages:
     ja:
         languageName: 日本語
-        title: デモサイト
+        title: 情報幾何学
         weight: 1
     # en:
     #     languageName: English
