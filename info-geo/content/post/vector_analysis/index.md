@@ -1,7 +1,7 @@
 +++
 author = "Hugo Authors"
 title = "ベクトル解析"
-date = "2019-03-11"
+date = "2022-08-05"
 description = ""
 tags = [
     "ベクトル解析"

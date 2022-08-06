@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>情報幾何学ゼミ</title>
+        <link>http://localhost:1313/post/test_dir/test2_dir/</link>
+        <description>Recent content on 情報幾何学ゼミ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-JP</language><atom:link href="http://localhost:1313/post/test_dir/test2_dir/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>T3</title>
+        <link>http://localhost:1313/p/t3/</link>
+        <pubDate>Sat, 06 Aug 2022 05:49:11 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/t3/</guid>
+        <description>&lt;h1 id=&#34;テストページ3&#34;&gt;テストページ3&lt;/h1&gt;
+&lt;p&gt;jia;fjeai;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>T2</title>
+        <link>http://localhost:1313/p/t2/</link>
+        <pubDate>Sat, 06 Aug 2022 05:48:36 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/t2/</guid>
+        <description>&lt;h1 id=&#34;t2&#34;&gt;t2&lt;/h1&gt;
+&lt;p&gt;aaaa&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>これはテストページ</title>
+        <link>http://localhost:1313/p/%E3%81%93%E3%82%8C%E3%81%AF%E3%83%86%E3%82%B9%E3%83%88%E3%83%9A%E3%83%BC%E3%82%B8/</link>
+        <pubDate>Sat, 06 Aug 2022 05:38:46 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E3%81%93%E3%82%8C%E3%81%AF%E3%83%86%E3%82%B9%E3%83%88%E3%83%9A%E3%83%BC%E3%82%B8/</guid>
+        <description>&lt;h1 id=&#34;テストページ&#34;&gt;テストページ&lt;/h1&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

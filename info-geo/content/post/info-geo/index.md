@@ -1,7 +1,7 @@
 +++
 author = "Hugo Authors"
 title = "情報幾何"
-date = "2019-03-11"
+date = "2022-08-05"
 description = ""
 tags = [
     "情報幾何",

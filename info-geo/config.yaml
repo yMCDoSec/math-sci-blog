@@ -1,13 +1,13 @@
-baseurl: https://example.com
+baseurl: https://www.info-geo.org
 languageCode: ja-JP
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: information geometry site
 
 languages:
     ja:
         languageName: 日本語
-        title: 情報幾何学
+        title: 情報幾何学サークル
         weight: 1
     # en:
     #     languageName: English
@@ -27,7 +27,7 @@ languages:
 disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: G-QFQV83BJK7
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -197,18 +197,18 @@ params:
 menu:
     main: []
 
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
-          params:
-              icon: brand-github
+    # social:
+        # - identifier: github
+        #   name: GitHub
+        #   url: https://github.com/CaiJimmy/hugo-theme-stack
+        #   params:
+        #       icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        # - identifier: twitter
+        #   name: Twitter
+        #   url: https://twitter.com
+        #   params:
+        #       icon: brand-twitter
 
 related:
     includeNewer: true
@@ -225,7 +225,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
