@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+author = "maeda"
 title = "ベクトル解析"
 date = "2022-08-05"
 description = ""
