@@ -1,16 +1,16 @@
 +++
 author = "maeda"
-title = "ベクトル解析"
+title = "ベクトル空間"
 date = "2022-08-05"
 description = ""
 tags = [
     "ベクトル解析"
 ]
 categories = [
-    "ベクトル解析"
+    "ベクトル解析30講"
 ]
 series = ["ベクトル解析"]
-aliases = ["migrate-from-jekyl"]
+aliases = ["vector analysis　ベクトル解析"]
 +++
 
 # ベクトル解析
