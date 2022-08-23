@@ -1,3 +1,3 @@
 [build]
 publish = "public"
-command = "bundle exec hugo --gc --minify"
+command = "bundle && hugo"
