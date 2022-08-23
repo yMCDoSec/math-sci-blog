@@ -6,8 +6,4 @@ command = "bundle && hugo --gc --minify"
 HUGO_VERSION = "0.101.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-<<<<<<< HEAD
 RUBY_VERSION = "3.0.2"
-=======
-RUBY_VERSION = "2.3.20"
->>>>>>> 22b8cfb52f41e01ae836adfe04a51bbbe34a9b9c
