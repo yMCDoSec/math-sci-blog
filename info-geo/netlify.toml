@@ -1,6 +1,10 @@
 [build]
 publish = "info-geo/public"
+<<<<<<< HEAD
 command = "bundle:2.3.20 && hugo --gc --minify"
+=======
+command = "bundle && hugo --gc --minify"
+>>>>>>> 7c431a626e4e0543bbfbcc76a59464e5470d0866
 
 [context.production.environment]
 HUGO_VERSION = "0.101.0"
