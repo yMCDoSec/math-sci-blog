@@ -249,7 +249,7 @@ security:
     - ^postcss$
     - ^asciidoctor$
     osEnv:
-    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|RUBYLIB)$
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|RUBYLIB|GEM_PATH)$
   funcs:
     getenv:
     - ^HUGO_
