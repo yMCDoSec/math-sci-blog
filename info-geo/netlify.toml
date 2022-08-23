@@ -1,5 +1,5 @@
 [build]
-publish = "info-geo/public"
+publish = "public"
 command = "bundle && hugo --gc --minify"
 
 [context.production.environment]
