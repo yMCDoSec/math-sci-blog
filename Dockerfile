@@ -4,3 +4,4 @@ RUN apt update && apt upgrade -y
 
 RUN gem install bundler
 RUN bundle init
+RUN bundle install --path vendor/bundle
