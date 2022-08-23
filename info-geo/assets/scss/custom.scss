@@ -1,0 +1,39 @@
+.xAccordion {
+
+    /* タイトル */
+    &_title {
+        display: block;
+        padding: 0.5rem 0.7rem;
+        background: #ddd;
+        cursor: pointer;
+
+        &::after {
+            font-size: smaller;
+            color: #999;
+            content: "click";
+        }
+
+        &:hover {
+            background: #ccc;
+        }
+    }
+
+    &_body {
+        display: none;
+        /* デフォルトでは本文は非表示 */
+
+        /* 本文の共通設定 */
+        border: solid lightgray 1px;
+        padding: 0.5rem;
+    }
+
+    input {
+        display: none;
+        /* チェックボックスは非表示 */
+
+        /* ラベルをクリックしたら本文を開く（表示） */
+        &:checked+.xAccordion_body {
+            display: block;
+        }
+    }
+}

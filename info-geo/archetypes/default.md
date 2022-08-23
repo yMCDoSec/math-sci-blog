@@ -10,4 +10,5 @@ categories = [
 series = []
 aliases = []
 draft = false
+mathjax = true
 +++

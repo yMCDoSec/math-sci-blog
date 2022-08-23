@@ -1,0 +1,10 @@
+---
+author: ""
+title: "{{ replace .Name "-" " " | title }}"
+date: "{{ .Date }}"
+description: ""
+tags: []
+categories: []
+draft: false
+mathjax: true
+---

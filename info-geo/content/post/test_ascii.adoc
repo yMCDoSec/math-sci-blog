@@ -1,0 +1,14 @@
+---
+author: ""
+title: "Test_ascii"
+date: "2022-08-23T01:04:16Z"
+description: ""
+tags: []
+categories: []
+draft: false
+mathjax: true
+---
+
+== test
+
+$\inf_0^1 x dx$
