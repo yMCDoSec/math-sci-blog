@@ -1,0 +1,11 @@
+{{- $title := .Get "title" | default "命題" }}
+{{- $label := .Get "label" | default (delimit (seq 9 | shuffle) "") }}
+<div class="xProposition">
+    <label class="xProposition_title" id="id-{{ $label }}">{{ $title }}</label>
+    <script type="text/javascript">
+        title_elem = document.getElementById("id-{{ $label }}");
+        title_elem.textContent += " " + theorem.proposition;
+        theorem.proposition += 1;
+    </script>
+    <div class="xProposition_body"> {{.Inner}} </div>
+</div>

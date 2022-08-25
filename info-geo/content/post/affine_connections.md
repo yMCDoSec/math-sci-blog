@@ -10,6 +10,7 @@ categories = [
 ]
 series = ["情報幾何"]
 aliases = []
+mathjax = true
 +++
 
 # test test

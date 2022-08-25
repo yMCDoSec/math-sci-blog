@@ -11,6 +11,7 @@ categories = [
 ]
 series = ["ベクトル解析"]
 aliases = ["vector analysis　ベクトル解析"]
+mathjax = true
 +++
 
 # ベクトル解析

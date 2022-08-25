@@ -1,0 +1,11 @@
+{{- $title := .Get "title" | default "定義" }}
+{{- $label := .Get "label" | default (delimit (seq 9 | shuffle) "") }}
+<div class="xDefinition">
+    <label class="xDefinition_title" id="id-{{ $label }}">{{ $title }}</label>
+    <script type="text/javascript">
+        title_elem = document.getElementById("id-{{ $label }}");
+        title_elem.textContent += " " + theorem.definition;
+        theorem.definition += 1;
+    </script>
+    <div class="xDefinition_body"> {{.Inner}} </div>
+</div>
