@@ -209,6 +209,8 @@ VsCode を使用している場合，いくつかの snippet を登録してい�
 hugo server
 ```
 
+オプションに "-D" をつけると，Front Matter の draft が true のページも表示されます．
+
 [http://localhost:1313](http://localhost:1313) を開くことで，アップロードしたときにどのように表示されるか確認することができます．
 
 
