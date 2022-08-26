@@ -13,7 +13,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --body-background: #f5f5fa;
 
-    --accent-color: #34495e;
+    --accent-color: #005B98;
     --accent-color-darker: #2c3e50;
     --accent-color-text: #fff;
     --body-text-color: #bababa;
@@ -27,7 +27,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     &[data-scheme="dark"] {
         --body-background: #303030;
-        --accent-color: #ecf0f1;
+        --accent-color: #0080ff;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
@@ -111,7 +111,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --heading-border-size: 4px;
 
-    --link-background-color: 189, 195, 199;
+    --link-background-color: 98, 0, 255;
     --link-background-opacity: 0.5;
     --link-background-opacity-hover: 0.7;
 
