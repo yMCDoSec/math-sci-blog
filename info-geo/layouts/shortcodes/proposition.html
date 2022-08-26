@@ -1,5 +1,7 @@
 {{- $title := .Get "title" | default "命題" }}
 {{- $label := .Get "label" | default (delimit (seq 9 | shuffle) "") }}
+{{- $path := .Page.File }}
+{{ if strings.HasSuffix $path "adoc" }}+++{{ end }}
 <div class="xProposition">
     <label class="xProposition_title" id="id-{{ $label }}">{{ $title }}</label>
     <script type="text/javascript">
@@ -9,3 +11,4 @@
     </script>
     <div class="xProposition_body"> {{.Inner}} </div>
 </div>
+{{ if strings.HasSuffix $path "adoc" }}+++{{ end }}

@@ -1,5 +1,5 @@
 {{- $link_name := .Get "link_name" | default "" }}
-{{- $label := .Get "label" | default (delimit (seq 9 | shuffle) "") }}
+{{- $label := .Get "label" }}
 {{- $id := delimit (seq 9 | shuffle) "" }}
 <a id="{{ $id }}" href="#id-{{ $label }}" style="color: blue;">{{ $link_name }}</a>
 {{if eq $link_name ""}}
