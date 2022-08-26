@@ -3,8 +3,11 @@ author: ""
 title: "{{ replace .Name "-" " " | title }}"
 date: "{{ .Date }}"
 description: ""
-tags: []
-categories: []
+tags: [
+]
+categories: [
+]
+aliases: []
 draft: false
 mathjax: true
 ---

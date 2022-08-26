@@ -1,0 +1,11 @@
+{
+  "languages": [
+    {
+      "id": "asciidoc",
+      "extensions": [
+        ".adoc"
+      ],
+      "aliases": []
+    }
+  ]
+}

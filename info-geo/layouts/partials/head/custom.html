@@ -1,0 +1,25 @@
+{{/* 構造体 */}}
+<script type="text/javascript">
+    function struct(func) {
+        return function () {
+            if (!(this instanceof arguments.callee)) {
+                var f = new arguments.callee();
+                func.apply(f, arguments);
+                return f;
+            }
+            return func.apply(this, arguments);
+        };
+    }
+</script>
+
+{{/* 定理環境用定数 */}}
+<script type="text/javascript">
+    let Theorem = struct(function (definition, proposition, theorem, example) {
+        this.definition = definition;
+        this.proposition = proposition;
+        this.theorem = theorem;
+        this.example = example;
+    });
+
+    let theorem = Theorem(1, 1, 1, 1);
+</script>
