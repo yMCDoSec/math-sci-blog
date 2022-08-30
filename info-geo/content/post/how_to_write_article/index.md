@@ -69,7 +69,7 @@ mathjax = true
 | date        | 作成日時                                    | "2022-08-25T09:54:31Z" |
 | description | 記事の説明                                  | "これは記事の概要です" |
 | tags        | タグ                                        | ["hugo", "site"]       |
-| categories  | カテゴリ                                    | "article"              |
+| categories  | カテゴリ                                    | ["site"]               |
 | aliases     | このページの別名                            | ["old_article"]        |
 | draft       | 公開しないかどうか<br>true の時公開しない   | false                  |
 | mathjax     | 数式を使用するかどうか<br>true の時使用する | true                   |
@@ -127,6 +127,8 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 
 折り畳み
 
+{{% example title="例" label="" %}}
+
 ```
 {% accordion title="もっと詳しく" %}
 - 本文はデフォルトで折りたたまれています．
@@ -134,22 +136,25 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 {% /accordion %}
 ```
 
-
 {{% accordion title="もっと詳しく" %}}
 - 本文はデフォルトで折りたたまれています．
 - クリックすることで展開されます．
 {{% /accordion %}}
 
+{{% /example %}}
 
 ### 定理環境
 
-現在，以下の4つを実装してます．
+現在，以下の5つを実装してます．
 - 定義 (definition)
 - 定理 (theorem)
 - 命題 (proposition)
+- 証明 (proof)
 - 例 (example)
 
 番号は各項目ごとに自動でカウントしています．
+
+{{% example title="例" label="" %}}
 
 ```
 {% definition title="定義" label="def-1" %}
@@ -178,9 +183,14 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 写像 $\varphi : \boldsymbol{V} \to \mathbb{R}$ が ...
 {{% /definition %}}
 
+{{% /example %}}
+
 #### 参照
 
-定理環境の label を指定することで定義等を参照することが出来ます．
+定理環境の label を指定することで定義等を参照することが出来ます． \
+link_name を指定しない（もしくは "") 場合，参照先の title を使用します．
+
+{{% example title="例" label="" %}}
 
 ```
 {< refer link_name="" label="the-1" >} から ...
@@ -193,12 +203,21 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 
 {{< refer link_name="〇〇の定義" label="def-2" >}} により ...
 
+{{% /example %}}
 
 ## snippet
 
 VsCode を使用している場合，いくつかの snippet を登録しています．
 
-
+| prefix         | description |
+| :------------- | :---------- |
+| :accordion     | 折り畳み    |
+| :definition    | 定義        |
+| :theorem       | 定理        |
+| :propositional | 命題        |
+| :proof         | 証明        |
+| :example       | 例          |
+| :reference     | 参照        |
 
 
 ## ローカルで確認

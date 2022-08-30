@@ -1,7 +1,7 @@
 {
     "Definition": {
         "scope": "markdown, asciidoc",
-        "prefix": ":def",
+        "prefix": ":definition",
         "body": [
             "{{% definition title=\"定義\" label=\"$1\" %}}",
             "$2",
@@ -11,7 +11,7 @@
     },
     "Propositional": {
         "scope": "markdown, asciidoc",
-        "prefix": ":prop",
+        "prefix": ":propositional",
         "body": [
             "{{% propositional title=\"命題\" label=\"$1\" %}}",
             "$2",
@@ -21,7 +21,7 @@
     },
     "Theorem": {
         "scope": "markdown, asciidoc",
-        "prefix": ":the",
+        "prefix": ":theorem",
         "body": [
             "{{% theorem title=\"定理\" label=\"$1\" %}}",
             "$2",
@@ -29,9 +29,19 @@
         ],
         "description": "定理"
     },
+    "Proof": {
+        "scope": "markdown, asciidoc",
+        "prefix": ":proof",
+        "body": [
+            "{{% theorem title=\"証明\" label=\"$1\" %}}",
+            "$2",
+            "{{% /theorem %}}"
+        ],
+        "description": "証明"
+    },
     "Example": {
         "scope": "markdown, asciidoc",
-        "prefix": ":exa",
+        "prefix": ":example",
         "body": [
             "{{% example title=\"例\" label=\"$1\" %}}",
             "$2",
@@ -41,7 +51,7 @@
     },
     "Refrerence": {
         "scope": "markdown, asciidoc",
-        "prefix": ":ref",
+        "prefix": ":refrence",
         "body": [
             "{{< refer link_name=\"\" label=\"$1\" >}}"
         ],
@@ -49,7 +59,7 @@
     },
     "Accordion": {
         "scope": "markdown, asciidoc",
-        "prefix": ":acc",
+        "prefix": ":accordion",
         "body": [
             "{{% accordion title=\"${1:もっと詳しく}\" %}}",
             "$2",
