@@ -3,9 +3,9 @@ author = "深水智史"
 title = "双対ベクトル空間"
 date = "2022-08-31T19:24:58+09:00"
 description = ""
-tags = [
+tags = ["線形代数", "双対性"
 ]
-categories = [
+categories = ["ベクトル解析30講"
 ]
 aliases = []
 draft = false
