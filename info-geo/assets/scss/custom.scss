@@ -113,3 +113,22 @@
         padding: 2rem;
     }
 }
+
+.xProof {
+    &_title {
+        display: block;
+        padding: 0.5rem 0.7rem;
+        background: #ddd;
+
+        &::after {
+            font-size: smaller;
+            color: #999;
+        }
+    }
+
+    &_body {
+        display: block;
+        border: solid lightgray 1px;
+        padding: 2rem;
+    }
+}

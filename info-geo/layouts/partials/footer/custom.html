@@ -1,12 +1,27 @@
 {{ if .Page.Params.mathjax }}
 <!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML"
+    type="text/javascript">
+        MathJax.Hub.Config({
+            HTML: ["input/TeX", "output/HTML-CSS"],
+            TeX: {
+                Macros: {
+                    bm: ["\\boldsymbol{#1}", 1]
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js", "color.js"],
+                equationNumbers: { autoNumber: "AMS" }
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [['$$', '$$'], ["\\[", "\\]"]],
+                processEscapes: true
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                linebreaks: { automatic: true }
+            }
+        });
+    </script>
 {{ end }}
