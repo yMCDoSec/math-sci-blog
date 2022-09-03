@@ -1,7 +1,7 @@
 {{- $link_name := .Get "link_name" | default "" }}
 {{- $label := .Get "label" }}
 {{- $id := delimit (seq 9 | shuffle) "" }}
-<a id="{{ $id }}" href="#id-{{ $label }}" style="color: blue;">{{ $link_name }}</a>
+<a id="{{ $id }}" href="#id-{{ $label }}">{{ $link_name }}</a>
 {{if eq $link_name ""}}
 <script type="text/javascript">
     title_elem = document.getElementById("id-{{ $label }}");
