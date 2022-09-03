@@ -18,6 +18,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-color-text: #fff;
     --body-text-color: #bababa;
 
+    --theorem-text-color: #000;
+
     --tag-border-radius: 4px;
 
     --section-separation: 40px;
@@ -30,6 +32,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --accent-color: #0080ff;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
+        --theorem-text-color: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
         --scrollbar-thumb: hsl(0, 0%, 40%);
         --scrollbar-track: var(--body-background);
