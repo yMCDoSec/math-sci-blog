@@ -185,17 +185,24 @@ menu:
     main: []
 
     # social:
-        # - identifier: github
-        #   name: GitHub
-        #   url: https://github.com/CaiJimmy/hugo-theme-stack
-        #   params:
-        #       icon: brand-github
+    #     - identifier: github
+    #       name: GitHub
+    #       url: https://github.com/yMCDoSec/info-geo-blog
+    #       params:
+    #           icon: brand-github
 
-        # - identifier: twitter
-        #   name: Twitter
-        #   url: https://twitter.com
-        #   params:
-        #       icon: brand-twitter
+    #     - identifier: twitter
+    #       name: Twitter
+    #       url: https://twitter.com/blank_space2020
+    #       params:
+    #           icon: brand-twitter
+
+    #     - identifier: mail
+    #       name: Mail
+    #       url: mailto:fukami.satoshi760@mail.kyutech.jp
+    #       params:
+    #           icon: mail
+
 
 related:
     includeNewer: true
