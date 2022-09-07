@@ -188,6 +188,7 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 #### 参照
 
 定理環境の label を指定することで定義等を参照することが出来ます． \
+file_name を指定すると別ファイルのものを参照することができます． \
 link_name を指定しない（もしくは "") 場合，参照先の title を使用します．
 
 {{% example title="例" label="" %}}
@@ -196,12 +197,16 @@ link_name を指定しない（もしくは "") 場合，参照先の title を�
 {< refer link_name="" label="the-1" >} から ...
 
 {< refer link_name="〇〇の定義" label="def-2" >} により ...
+
+{< refer link_name="内積の定義" file_name="inner-product-tensor-space.md" label="inner-product" >} から ...
 ```
 
 
 {{< refer link_name="" label="the-1" >}} から ...
 
 {{< refer link_name="〇〇の定義" label="def-2" >}} により ...
+
+{{< refer link_name="内積の定義" file_name="inner-product-tensor-space.md" label="inner-product" >}} から ...
 
 {{% /example %}}
 

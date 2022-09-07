@@ -1,11 +1,24 @@
-{{- $link_name := .Get "link_name" | default "" }}
+{{- $default_link_name := "Please enter a link name"}}
+{{- $link_name := .Get "link_name" | default $default_link_name }}
+{{- $file_name := .Get "file_name" | default "" }}
 {{- $label := .Get "label" }}
 {{- $id := delimit (seq 9 | shuffle) "" }}
+
+{{/* 同じファイル内でリンクを張る */}}
+{{ if eq $file_name "" }}
 <a id="{{ $id }}" href="#id-{{ $label }}">{{ $link_name }}</a>
-{{if eq $link_name ""}}
+{{/* 参照先の title を取得してリンクの表示に使用する */}}
+{{ if eq $link_name $default_link_name }}
 <script type="text/javascript">
     title_elem = document.getElementById("id-{{ $label }}");
     link_elem = document.getElementById("{{ $id }}")
     link_elem.textContent = title_elem.textContent
 </script>
-{{end}}
+{{ end }}
+
+{{/* 別ファイルのリンクを張る (link_name を指定する必要あり) */}}
+{{ else }}
+<a id="{{ $id }}" href="{{ relref . (printf `%s/#id-%s` $file_name $label ) }}" target="_blank">
+    {{ $link_name }}
+</a>
+{{ end }}
