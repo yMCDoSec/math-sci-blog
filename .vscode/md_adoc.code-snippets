@@ -33,9 +33,9 @@
         "scope": "markdown, asciidoc",
         "prefix": ":proof",
         "body": [
-            "{{% theorem title=\"証明\" label=\"$1\" %}}",
+            "{{% proof title=\"証明\" label=\"$1\" %}}",
             "$2",
-            "{{% /theorem %}}"
+            "{{% /proof %}}"
         ],
         "description": "証明"
     },
