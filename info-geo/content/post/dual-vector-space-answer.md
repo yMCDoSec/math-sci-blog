@@ -1,5 +1,5 @@
 +++
-author = "Fukami Satoshi"
+author = "深水智史"
 title = "双対ベクトル空間の代数構造"
 date = "2022-09-07T10:33:54+09:00"
 description = ""
@@ -35,7 +35,7 @@ $$
 
 と定められる線形関数
 $\boldsymbol{e}^1, \boldsymbol{e}^2, \cdots \boldsymbol{e}^n$
-の線形結合でできる線形関数全体のことだと考えていただきたい。
+の線形結合でできる線形関数のことだと考えていただきたい。
 
 逆に、"座標成分を対応させないような線形関数"とは
 $\boldsymbol{e}^1, \boldsymbol{e}^2, \cdots \boldsymbol{e}^n$
