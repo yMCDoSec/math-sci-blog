@@ -1,3 +1,31 @@
+<script type="text/javascript">
+    { {/*  カテゴリ色をカテゴリごとに分ける  */ } }
+    let categories_class = document.getElementsByClassName("article-category");
+    categories_class = Array.prototype.slice.call(categories_class);
+    console.log(categories_class);
+    let categories = categories_class.map(function (v) { return Array.prototype.slice.call(v.children) }).flat()
+    console.log(categories);
+    let classified_categories = {};
+    for (let category of categories) {
+        text = category.textContent;
+        if (typeof classified_categories[text] === "undefined") {
+            classified_categories[text] = [category];
+        } else {
+            classified_categories[text].push(category);
+        }
+    }
+    let colors = ["#8ea885", "#df7988", "#0177b8", "#ffb900", "#6b69d6"];
+    for (let ci = 0; ci < Object.keys(classified_categories).length; ci += 1) {
+        let ci_mod = ci % colors.length;
+        console.log(ci);
+        keys = Object.keys(classified_categories);
+        classified_categories[keys[ci]].map(function (v) {
+            console.log(v.style.background)
+            v.style.background = colors[ci_mod];
+        })
+    }
+</script>
+
 {{ if .Page.Params.mathjax }}
 <!-- MathJax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML"
@@ -24,4 +52,15 @@
             }
         });
     </script>
+<style>
+    .MathJax {
+        font-size: 1.3em;
+    }
+
+    span.MJXc-display {
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 100%;
+    }
+</style>
 {{ end }}
