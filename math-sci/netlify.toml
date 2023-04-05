@@ -1,0 +1,15 @@
+[build]
+publish = "public"
+command = "hugo"
+
+[[redirects]]
+  from = "https://stately-biscuit-affd3b.netlify.app"
+  to = "https://www.math-sci.club"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://info-geo.org"
+  to = "https://www.math-sci.club"
+  status = 301
+  force = true
