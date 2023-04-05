@@ -19,7 +19,7 @@ markdown で書く場合を書いているので asciidoc で書くときは拡�
 
 ## ファイル作成
 
-info-geo フォルダへ移動する．
+math-sci フォルダへ移動する．
 
 画像等のファイルを記事に使用したい場合．
 ```shell
@@ -37,7 +37,7 @@ hugo new post/{article_name}.md
 
 \
 \
-ファイルは info-geo/content/post/ に作成されます．
+ファイルは math-sci/content/post/ に作成されます．
 
 
 ## Front Matter
@@ -240,4 +240,4 @@ hugo server
 
 ## pull request
 
-記事が完成したら[リンク先](https://github.com/yMCDoSec/info-geo-blog) に pull request を出してください．
+記事が完成したら[リンク先](https://github.com/yMCDoSec/math-sci-blog) に pull request を出してください．
