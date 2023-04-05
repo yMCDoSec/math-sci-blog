@@ -1,3 +1,6 @@
-[submodule "info-geo/themes/hugo-theme-stack"]
-	path = info-geo/themes/hugo-theme-stack
+[submodule "math-sci/hugo-theme-stack"]
+	path = math-sci/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "math-sci/themes/hugo-theme-stack"]
+	path = math-sci/themes/hugo-theme-stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack/
