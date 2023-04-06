@@ -2,9 +2,7 @@
     { {/*  カテゴリ色をカテゴリごとに分ける  */ } }
     let categories_class = document.getElementsByClassName("article-category");
     categories_class = Array.prototype.slice.call(categories_class);
-    console.log(categories_class);
     let categories = categories_class.map(function (v) { return Array.prototype.slice.call(v.children) }).flat()
-    console.log(categories);
     let classified_categories = {};
     for (let category of categories) {
         text = category.textContent;
@@ -17,10 +15,8 @@
     let colors = ["#8ea885", "#df7988", "#0177b8", "#ffb900", "#6b69d6"];
     for (let ci = 0; ci < Object.keys(classified_categories).length; ci += 1) {
         let ci_mod = ci % colors.length;
-        console.log(ci);
         keys = Object.keys(classified_categories);
         classified_categories[keys[ci]].map(function (v) {
-            console.log(v.style.background)
             v.style.background = colors[ci_mod];
         })
     }
