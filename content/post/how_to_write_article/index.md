@@ -13,36 +13,24 @@ draft = false
 mathjax = true
 +++
 
-記事を書く為に最低限必要な情報です．
+記事を書く為に最低限必要な情報です。
 
-markdown で書く場合を書いているので asciidoc で書くときは拡張子を .adoc としてください．
+markdown で書く場合を書いているので asciidoc で書くときは拡張子を .adoc としてください。
 
 ## ファイル作成
 
-math-sci フォルダへ移動する．
-
-画像等のファイルを記事に使用したい場合．
+以下のように `hugo new` コマンドでファイルを作成します。
 ```shell
 hugo new post/{article_name}/index.md
 ```
-{article_name} フォルダの中に画像等を入れて使用出来ます．
+ファイルは `content/post/{article_name}/index.md` に作成されます。
 
-\
-\
-markdown ファイルのみで書く場合．
-
-```shell
-hugo new post/{article_name}.md
-```
-
-\
-\
-ファイルは math-sci/content/post/ に作成されます．
+{article_name} フォルダに画像を入れて、記事に画像を表示することもできます。
 
 
 ## Front Matter
 
-作成されたファイルを開くと，以下のようなものが記入されています．
+作成されたファイルを開くと，以下のようなものが記入されています。
 
 ```markdown
 +++
@@ -60,7 +48,7 @@ mathjax = true
 +++
 ```
 
-これは Front Matter といい，記事の設定ができます．
+これは Front Matter といい，記事の設定ができます。
 
 | key         | description                                 | example                |
 | :---------- | :------------------------------------------ | :--------------------- |
@@ -70,23 +58,31 @@ mathjax = true
 | description | 記事の説明                                  | "これは記事の概要です" |
 | tags        | タグ                                        | ["hugo", "site"]       |
 | categories  | カテゴリ                                    | ["site"]               |
-| aliases     | このページの別名                            | ["old_article"]        |
+| aliases     | このページの別名                            | ["old_article_name"]   |
 | draft       | 公開しないかどうか<br>true の時公開しない   | false                  |
 | mathjax     | 数式を使用するかどうか<br>true の時使用する | true                   |
 
 
-author と title は記入してください．
+author と title は記入してください。
 \
-必要に応じて description, tags, categories, aliases も記入してください．
+必要に応じて description, tags, categories, aliases も記入してください。
 
+
+## 画像
+画像を`content/post/{article_name}/`フォルダに入れてください。
+
+
+<code>\{\{< figure src="image1.svg" height="300" >\}\}</code> のように画像名を入れると画像が表示されます。
+
+{{< figure src="image1.svg" height="300" >}}
 
 ## 数式
 
-数式描画用のライブラリは [MathJax](https://www.mathjax.org/) を使用しています．
+数式描画用のライブラリは [MathJax](https://www.mathjax.org/) を使用しています。
 
-インライン数式 <code>${content}$</code>
+インライン数式 `$f(x) = x^2$`
 \
-ディスプレイ数式 <code>$${content}$$</code>
+ディスプレイ数式 `$$f(x) = x^2$$`
 
 {{% example title="例" label="e" %}}
 
@@ -102,18 +98,18 @@ author と title は記入してください．
 {{% /example %}}
 
 
-asciidoc の場合はこちらの方が書きやすいと思います．
+以下の書き方でも同じ動作です。
 
-インライン数式 <code>\\({content}\\)</code>
+インライン数式 `\( f(x) = x^2 \)`
 \
-ディスプレイ数式 <code>\\[{content}\\]</code>
+ディスプレイ数式 `\[ f(x) = x^2 \]`
 
 
 ## Short Codes
 
-Short Codes は Hugo のテンプレート機能で，markdown では表現できない HTML を表現することができます．
+Short Codes は Hugo のテンプレート機能で，markdown では表現できない HTML を表現することができます。
 
-構文は基本以下の3つです．
+構文は基本以下の3つです。
 
 1. \{\{< ショートコード名 >\}\}
 1. \{\{< ショートコード名 >\}\} 文章 \{\{< ショートコード名 >\}\}
@@ -121,7 +117,7 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 1. \{\{% ショートコード名 %\}\} 文章 \{\{% ショートコード名 %\}\}
     - 内部の文章を markdown (もしくは asciidoc) パーサに渡します．
 
-以下，そのまま表示するために "{" で囲んでいますが，使用する際は "{{" としてください．
+以下，そのまま表示するために `{` で囲んでいますが，使用する際は `{{` としてください。
 
 ### utils
 
@@ -131,28 +127,28 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 
 ```
 {% accordion title="もっと詳しく" %}
-- 本文はデフォルトで折りたたまれています．
-- クリックすることで展開されます．
+- 本文はデフォルトで折りたたまれています。
+- クリックすることで展開されます。
 {% /accordion %}
 ```
 
 {{% accordion title="もっと詳しく" %}}
-- 本文はデフォルトで折りたたまれています．
-- クリックすることで展開されます．
+- 本文はデフォルトで折りたたまれています。
+- クリックすることで展開されます。
 {{% /accordion %}}
 
 {{% /example %}}
 
 ### 定理環境
 
-現在，以下の5つを実装してます．
+現在，以下の5つを実装してます。
 - 定義 (definition)
 - 定理 (theorem)
 - 命題 (proposition)
 - 証明 (proof)
 - 例 (example)
 
-番号は各項目ごとに自動でカウントしています．
+番号は各項目ごとに自動でカウントしています。
 
 {{% example title="例" label="" %}}
 
@@ -187,9 +183,9 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 
 #### 参照
 
-定理環境の label を指定することで定義等を参照することが出来ます． \
-file_name を指定すると別ファイルのものを参照することができます． \
-link_name を指定しない（もしくは "") 場合，参照先の title を使用します．
+定理環境の label を指定することで定義等を参照することが出来ます。 \
+file_name を指定すると別ファイルのものを参照することができます。 \
+link_name を指定しない（もしくは "") 場合，参照先の title を使用します。
 
 {{% example title="例" label="" %}}
 
@@ -212,7 +208,7 @@ link_name を指定しない（もしくは "") 場合，参照先の title を�
 
 ## snippet
 
-VsCode を使用している場合，いくつかの snippet を登録しています．
+VsCode を使用している場合，いくつかの snippet を登録しています。
 
 | prefix         | description |
 | :------------- | :---------- |
@@ -227,17 +223,17 @@ VsCode を使用している場合，いくつかの snippet を登録してい�
 
 ## ローカルで確認
 
-以下のコマンドでサーバーを立ち上げます．
+以下のコマンドでサーバーを立ち上げます。
 
 ```
 hugo server
 ```
 
-オプションに "-D" をつけると，Front Matter の draft が true のページも表示されます．
+オプションに "-D" をつけると，Front Matter の draft が true のページも表示されます。
 
-[http://localhost:1313](http://localhost:1313) を開くことで，アップロードしたときにどのように表示されるか確認することができます．
+[http://localhost:1313](http://localhost:1313) を開くことで，アップロードしたときにどのように表示されるか確認することができます。
 
 
 ## pull request
 
-記事が完成したら[リンク先](https://github.com/yMCDoSec/math-sci-blog) に pull request を出してください．
+記事が完成したら[リンク先](https://github.com/yMCDoSec/math-sci-blog) に pull request を出してください。
