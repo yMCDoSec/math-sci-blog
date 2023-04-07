@@ -35,7 +35,7 @@ hugo new post/{article_name}/index.md
 ```markdown
 +++
 author = ""
-title = "{article_name}"
+title = "article_name"
 date = "2022-08-25T09:54:31Z"
 description = ""
 tags = [
@@ -69,7 +69,7 @@ author と title は記入してください。
 
 
 ## 画像
-画像を`content/post/{article_name}/`フォルダに入れてください。
+画像を`content/post/article_name/`フォルダに入れてください。
 
 
 <code>\{\{< figure src="image1.svg" height="300" >\}\}</code> のように画像名を入れると画像が表示されます。
@@ -155,7 +155,7 @@ Short Codes は Hugo のテンプレート機能で，markdown では表現で�
 ```
 {% definition title="定義" label="def-1" %}
 写像 $\varphi : \bm{V} \to \mathbb{R}$ が ...
-{% /definition %}}
+{% /definition %}
 
 {% theorem title="定理" label="the-1" %}
 写像 $\varphi : \bm{V} \to \mathbb{R}$ が ...
@@ -194,7 +194,7 @@ link_name を指定しない（もしくは "") 場合，参照先の title を�
 
 {< refer link_name="〇〇の定義" label="def-2" >} により ...
 
-{< refer link_name="内積の定義" file_name="inner-product-tensor-space.md" label="inner-product" >} から ...
+{< refer link_name="内積の定義" file_name="inner-product-tensor-space/index.md" label="inner-product" >} から ...
 ```
 
 
@@ -202,7 +202,7 @@ link_name を指定しない（もしくは "") 場合，参照先の title を�
 
 {{< refer link_name="〇〇の定義" label="def-2" >}} により ...
 
-{{< refer link_name="内積の定義" file_name="inner-product-tensor-space.md" label="inner-product" >}} から ...
+{{< refer link_name="内積の定義" file_name="inner-product-tensor-space/index.md" label="inner-product" >}} から ...
 
 {{% /example %}}
 
