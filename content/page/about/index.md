@@ -20,11 +20,5 @@ menu:
 
 講義室を借用するために形式的にサークルとしていますが、参加者の半分は学外の方で、輪読会のみ行っています。
 
-輪読会への参加希望の方はご連絡ください。
-
-<a href="https://twitter.com/blank_space2020" style="color: blue;">Twitter</a>
-
-e-mail:fukami.satoshi760@mail.kyutech.jp
-
 現在は志賀浩二著「ベクトル解析30講」を読み進めており、こちらが終了次第、藤原彰夫著「情報幾何学の基礎」を読む予定です。
 
