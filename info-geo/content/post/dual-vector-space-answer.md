@@ -1,5 +1,5 @@
 +++
-author = "深水智史"
+author = "FS"
 title = "双対ベクトル空間の代数構造"
 date = "2022-09-07T10:33:54+09:00"
 description = ""
