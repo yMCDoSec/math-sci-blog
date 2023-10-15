@@ -1,5 +1,5 @@
 +++
-author = "深水智史"
+author = "SF"
 title = "双対基底の違和感"
 date = "2022-08-31T19:24:58+09:00"
 description = ""
